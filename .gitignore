@@ -1,0 +1,70 @@
+# ==============================================================================
+# FreshGuard AI — Git Ignore Configuration
+# GDGoC HITAM Agentic AI Hackathon (Problem Statement 2: Zero-Waste Grocery)
+# ==============================================================================
+
+# Byte-compiled / Python bytecode cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Local databases & SQLite runtime files
+# Note: freshguard_db.py automatically initializes and seeds freshguard.db on first launch.
+# Local .db files are excluded to prevent committing session tokens or private customer data.
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+credentials.json
+client_secrets.json
+*.key
+*.pem
+secrets/
+
+# User-uploaded files and temporary folders
+uploads/
+uploaded_files/
+tmp/
+temp/
+*.tmp
+*.log
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Packaging and distribution
+dist/
+build/
+*.egg-info/
+.eggs/

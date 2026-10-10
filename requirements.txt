@@ -1,0 +1,29 @@
+# ==============================================================================
+# FreshGuard AI — Dependency Manifest
+# GDGoC HITAM Agentic AI Hackathon (Problem Statement 2: Zero-Waste Grocery)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# CORE APPLICATION (Zero External Dependencies Required):
+# ------------------------------------------------------------------------------
+# The primary FreshGuard web application (app.py, server.py, engine.py, agents/*)
+# is built to run entirely on the Python 3.9+ Standard Library.
+# It requires NO external pip packages to launch:
+#   - http.server, socketserver  (High-performance HTTP server & REST API)
+#   - sqlite3                    (ACID-compliant persistent database & audit trail)
+#   - hashlib, secrets           (PBKDF2-HMAC-SHA256 password security & CSRF tokens)
+#   - json, csv, io              (Data exchange & spreadsheet ingestion)
+#   - urllib.request, urllib.parse (Barcode API lookup & network communication)
+#   - math, random, datetime     (Forecasting math & deterministic simulations)
+
+# ------------------------------------------------------------------------------
+# OPTIONAL COMPANION DASHBOARD (streamlit_app.py):
+# ------------------------------------------------------------------------------
+# Install these only if you want to run the secondary Streamlit edition:
+streamlit>=1.28.0
+pandas>=2.0.0
+
+# ------------------------------------------------------------------------------
+# OPTIONAL LOCAL DEVELOPMENT UTILITIES:
+# ------------------------------------------------------------------------------
+python-dotenv>=1.0.0
