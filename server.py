@@ -15,7 +15,7 @@ from freshguard_db import init_db, seed_data, get_connection
 from engine import FreshGuardEngine
 from evaluation_simulator import EvaluationSimulator
 
-PORT = 8080
+PORT = int(os.environ.get("PORT", 8080))
 BASE_DIR = Path(__file__).parent.resolve()
 STATIC_DIR = BASE_DIR / "static"
 

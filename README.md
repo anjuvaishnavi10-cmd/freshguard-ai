@@ -355,6 +355,35 @@ python test_hackathon_simplification.py
 
 ---
 
+## 🌐 Cloud Deployment Guide
+
+FreshGuard AI is fully containerized and pre-configured for free cloud hosting platforms:
+
+### Option A: Render (Full Web App + REST API) — Recommended
+1. Sign in to [Render](https://render.com) and click **New + > Web Service**.
+2. Connect your GitHub repository: `https://github.com/anjuvaishnavi10-cmd/freshguard-ai`.
+3. Render automatically detects the configuration from [`render.yaml`](file:///C:/Users/anjuv/.gemini/antigravity-ide/scratch/freshguard/render.yaml):
+   - **Environment**: `Python` (or `Docker`)
+   - **Build Command**: `pip install -r requirements.txt || true`
+   - **Start Command**: `python server.py`
+4. Click **Create Web Service**. Your app will be live at `https://freshguard-ai.onrender.com`!
+
+### Option B: Streamlit Community Cloud (Companion Dashboard)
+1. Visit [share.streamlit.io](https://share.streamlit.io).
+2. Connect your GitHub account and select repository `anjuvaishnavi10-cmd/freshguard-ai`.
+3. Set **Main file path** to `streamlit_app.py`.
+4. Click **Deploy**. Your analytical dashboard will be live in 60 seconds!
+
+### Option C: Docker Container (Railway / Koyeb / Fly.io / GCP Cloud Run)
+Run locally or deploy on any container cloud provider using the included [`Dockerfile`](file:///C:/Users/anjuv/.gemini/antigravity-ide/scratch/freshguard/Dockerfile):
+```bash
+docker build -t freshguard-ai .
+docker run -p 8080:8080 freshguard-ai
+```
+
+---
+
 *FreshGuard AI — GDGoC HITAM Agentic AI Hackathon (Problem Statement 2: Zero-Waste Grocery)*
+
 
 
