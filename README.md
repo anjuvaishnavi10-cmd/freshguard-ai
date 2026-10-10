@@ -3,6 +3,10 @@
 
 > **GDGoC HITAM Agentic AI Hackathon** — *Problem Statement 2: "Zero-Waste Grocery — An Agentic AI Approach to Perishable Demand & Shelf-Life Management"*
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/anjuvaishnavi10-cmd/freshguard-ai)
+&nbsp;&nbsp;
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=anjuvaishnavi10-cmd/freshguard-ai&branch=main&mainModule=streamlit_app.py)
+
 ---
 
 ## 🛠️ Framework & Technology Stack
